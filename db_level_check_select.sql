@@ -55,7 +55,7 @@ SELECT COUNT(subscribe.category_id)
 FROM subscribe
 LEFT JOIN category
 ON category.category_id = subscribe.category_id
-WHERE author_id = 1;
+WHERE category.author_id = 1;
 
 
 -- step9 글리스트
