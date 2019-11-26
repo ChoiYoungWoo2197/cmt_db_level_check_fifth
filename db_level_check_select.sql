@@ -50,7 +50,7 @@ LEFT JOIN job ON job.job_id = author.job_id
 WHERE board_id = 1
 ;
 
--- step8 구독자 수 (구독자수만 left join을 쓰지 않고 교집합으로 찾아줌.)
+-- step8 구독자 수 
 SELECT COUNT(subscribe.category_id)
 FROM subscribe
 LEFT JOIN category
